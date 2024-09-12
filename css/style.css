@@ -807,5 +807,13 @@ section{
 .swiper-button-prev {
     color: yellow !important;
 }
-
+.box p, .box span {
+    font-size: 12px; /* Same font size for <p> and <span> */
+    line-height: 2; /* Ensures consistent line spacing */
+    margin: 0; /* Remove any default margins */
+}
+.box b {
+    font-weight: bold;
+    font-size: 13px; /* Makes the text bold, same as <b> */
+}
 
