@@ -502,7 +502,7 @@
                 <img src="images/contact.png" alt="">
             </div>
 
-            <form action="https://formspree.io/f/xpwaepyo" method="post">
+            <!-- <form action="https://script.google.com/macros/s/AKfycbzf1oBmnlHqqhgjsqIeO8tqxFwyAUGSlpVVuG3bFvVS443du7aGXd2il4wxz3B08nqcug/exec" method="post">
                 <h3>get in touch</h3>
 
                 <span>your name</span>
@@ -517,9 +517,27 @@
                 <span>your message</span>
                 <textarea class="box" cols="30" rows="10"></textarea>
 
-                <input type="submit" value="send message" class="btn">
+                <input type="submit" value="send message" class="btn"> -->
 
             </form>
+            <form action="https://formspree.io/f/xpwaepyo" method="POST">
+                <h3>get in touch</h3>
+            
+                <span>your name</span>
+                <input type="text" class="box" name="name" required>
+            
+                <span>your number</span>
+                <input type="number" class="box" name="number" required>
+            
+                <span>your email</span>
+                <input type="email" class="box" name="email" required>
+            
+                <span>your message</span>
+                <textarea class="box" name="message" cols="30" rows="10" required></textarea>
+            
+                <input type="submit" value="send message" class="btn">
+            </form>
+            
 
         </div>
 
