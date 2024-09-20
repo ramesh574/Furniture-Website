@@ -816,30 +816,7 @@ section{
     font-weight: bold;
     font-size: 13px; /* Makes the text bold, same as <b> */
 }
-/* The frame around the video */
-.video-frame {
-    width: 120%;   /* Increase this value to make the frame wider */
-    max-width: 1400px;  /* You can set a max-width if needed */
-    margin: 0 auto;     /* Center the frame if needed */
-    background-color: #000;  /* Optional: Add background color to the frame */
-    padding: 10px;      /* Optional: Padding around the video */
-}
 
-/* Video container remains the same */
-.video-container {
-    position: relative;
-    width: 100%;   /* Full width of the container */
-    padding-top: 56.25%;  /* Aspect ratio of 16:9 */
-}
-
-.video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;   /* Full width of the video */
-    height: 100%;  /* Full height, maintaining the aspect ratio */
-    object-fit: cover;
-}
 /* Footer Section */
 .footer {
     background-color: #111; /* Dark background */
