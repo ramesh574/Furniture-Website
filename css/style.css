@@ -816,4 +816,96 @@ section{
     font-weight: bold;
     font-size: 13px; /* Makes the text bold, same as <b> */
 }
+/* The frame around the video */
+.video-frame {
+    width: 120%;   /* Increase this value to make the frame wider */
+    max-width: 1400px;  /* You can set a max-width if needed */
+    margin: 0 auto;     /* Center the frame if needed */
+    background-color: #000;  /* Optional: Add background color to the frame */
+    padding: 10px;      /* Optional: Padding around the video */
+}
+
+/* Video container remains the same */
+.video-container {
+    position: relative;
+    width: 100%;   /* Full width of the container */
+    padding-top: 56.25%;  /* Aspect ratio of 16:9 */
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;   /* Full width of the video */
+    height: 100%;  /* Full height, maintaining the aspect ratio */
+    object-fit: cover;
+}
+/* Footer Section */
+.footer {
+    background-color: #111; /* Dark background */
+    color: #fff; /* White text */
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.footer .box {
+    flex: 1 1 250px;
+    min-width: 150px;
+}
+
+.footer .box h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #f0b918; /* Accent color */
+}
+
+.footer .box a {
+    display: block;
+    color: #fff;
+    margin: 8px 0;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer .box a i {
+    margin-right: 8px;
+}
+
+.footer .box a:hover {
+    color: #f0b918; /* Hover color */
+}
+
+.footer .credit {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #f0b918;
+}
+
+.footer .credit span {
+    font-weight: bold;
+    color: #fff; /* Highlighted text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer .box-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .box {
+        margin-bottom: 20px;
+    }
+}
+
+
+
 
